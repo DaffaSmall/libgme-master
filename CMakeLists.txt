@@ -83,6 +83,8 @@ endif (CMAKE_COMPILER_IS_GNUCXX)
 # Cache this result
 set( LIBGME_HAVE_GCC_VISIBILITY ${ENABLE_VISIBILITY} CACHE BOOL "GCC support for hidden visibility")
 
+install(FILES ${CMAKE_SOURCE_DIR}/LICENSE DESTINATION ${CMAKE_INSTALL_PREFIX})
+
 # Shared library defined here
 add_subdirectory(gme)
 
